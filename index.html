@@ -8,6 +8,7 @@
     <meta name="description" content="Portfolio Template for Developer" />
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="darkmode.css" id="dark-mode-stylesheet" disabled />
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,22 +33,29 @@
           <span class="header__logo-sub">Alwin George</span>
         </div>
         <div class="header__main">
-          <ul class="header__links">
+          <ul class="header__links" style="display: flex; align-items: center; gap: 20px;">
             <li class="header__link-wrapper">
-              <a href="./index.html" class="header__link"> Home </a>
+              <a href="./index.html" class="header__link">Home</a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#about" class="header__link">About </a>
+              <a href="./index.html#about" class="header__link">About</a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#projects" class="header__link">
-                Projects
-              </a>
+              <a href="./index.html#projects" class="header__link">Projects</a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#contact" class="header__link"> Contact </a>
+              <a href="./index.html#contact" class="header__link">Contact</a>
+            </li>
+          
+            <!-- Dark Mode Toggle Icon -->
+            <li class="header__link-wrapper">
+              <button id="dark-mode-toggle" style="background: none; border: none; cursor: pointer; font-size: 22px; color: inherit;">
+                🌙
+              </button>
             </li>
           </ul>
+          
+        
           <div class="header__main-ham-menu-cont">
             <img
               src="./assets/svg/ham-menu.svg"
@@ -61,6 +69,7 @@
             />
           </div>
         </div>
+        
       </div>
       <div class="header__sm-menu">
         <div class="header__sm-menu-content">
@@ -86,13 +95,14 @@
     </header>
     <section class="home-hero">
       <div class="home-hero__content">
-        <h1 class="heading-primary">Hey, My name is <br>Alwin George</h1>
+        <h1 class="heading-primary">Hey, My name is <span class="typing-effect"></span><br>Alwin George</span></h1>
         <div class="home-hero__info">
           <p class="text-primary">
-            Computer Science student (B.Tech CSE, 2026) with a strong base in cybersecurity, secure coding, and threat analysis. Skilled in building secure and scalable apps.          </p>
+            Computer Science student (B.Tech CSE, 2026) with a strong base in cybersecurity, secure coding, and threat analysis. Skilled in building secure and scalable apps.
+          </p>
         </div>
         <div class="home-hero__cta">
-          <a href="file:///C:/Users/alwin/Downloads/pt/Alwin%20Portfolio/index.html#projects" class="btn btn--bg">Projects</a>
+          <a href="./index.html#projects" class="btn btn--bg">Projects</a>
         </div>
       </div>
       <div class="home-hero__socials">
@@ -134,11 +144,11 @@
                 and I'm a Dedicated Computer Science student (B.Tech CSE, 2026) with a strong foundation in <strong>cybersecurity, network security, and secure coding practices. </strong>Experienced in designing and developing secure applications using design patterns (Singleton, Strategy, Factory) to enhance scalability and robustness. Eager to leverage hands-on experience in vulnerability assessment and threat analysis in Cyber Security
               </p>
               <p class="about__content-details-para">
-                <strong>Contact Me Here !!</strong>
+                
               </p>
             </div>
-            <a href="file:///C:/Users/alwin/Downloads/pt/Alwin%20Portfolio/index.html#contact" class="btn btn--med btn--theme dynamicBgClr"
-              >Contact</a
+            <a href="12215432 pes final all.pdf" class="btn btn--med btn--theme dynamicBgClr"
+              >DOWNLOAD CV</a
             >
           </div>
           <div class="about__content-skills">
@@ -360,7 +370,7 @@
         <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
         <div class="main-footer__lower">
           &copy; Copyright 2025. Made by
-          <a rel="noreferrer" target="_blank" href=file:///C:/Users/alwin/Downloads/pt/Alwin%20Portfolio/index.html
+          <a rel="noreferrer" target="_blank" href=./index.html
             >Alwin George</a
           >
         </div>
@@ -368,5 +378,19 @@
     </footer>
 
     <script src="./index.js"></script>
+    <script>
+      const darkModeToggle = document.getElementById('dark-mode-toggle');
+      const darkModeStylesheet = document.getElementById('dark-mode-stylesheet');
+    
+      let isDark = false;
+    
+      darkModeToggle.addEventListener('click', () => {
+        isDark = !isDark;
+        darkModeStylesheet.disabled = !isDark;
+        darkModeToggle.textContent = isDark ? '☀️' : '🌙'; // Changes icon
+      });
+    </script>
+    
+    
   </body>
 </html>

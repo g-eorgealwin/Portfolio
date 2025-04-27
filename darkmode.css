@@ -1,0 +1,201 @@
+/* General Styles */
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+.header {
+  background-color: #1f1f1f;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+
+.header__link {
+  color: #e0e0e0;
+}
+
+.header__link:hover {
+  color: #bb86fc;
+}
+.header__logo-sub {
+  
+  color: #ffffff;
+}
+.header__logo-sub:hover {
+  color: #007BFF; /* Change text color when hovered */
+}
+
+
+/* Mobile Menu */
+.header__sm-menu {
+  background-color: #1f1f1f;
+}
+
+.header__sm-menu-link a {
+  color: #e0e0e0;
+}
+
+/* Hero Section */
+.home-hero {
+  background-color: #121212;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.heading-primary {
+  font-size: 2.5rem;
+  color: #03dac5;
+  font-size: 6rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary {
+      font-size: 4.5rem; }
+}
+
+.typing-effect {
+  color: #03dac5;
+}
+
+.text-primary {
+  color: #b0b0b0;
+}
+
+.btn {
+  background-color: #03dac5;
+  color: #121212;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1.5rem;
+}
+
+.btn:hover {
+  background-color: #3700b3;
+}
+
+/* About Section */
+.about {
+  background-color: #121212;
+}
+
+.heading-sec__main {
+  color: #03dac5;
+}
+
+.heading-sec__sub {
+  color: #b0b0b0;
+}
+
+.about__content-title {
+  color: #03dac5;
+}
+
+.about__content-details-para {
+  color: #b0b0b0;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skills__skill {
+  background-color: #1f1f1f;
+  color: #e0e0e0;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* Projects Section */
+.projects {
+  background-color: #121212;
+}
+
+.projects__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.projects__row-img-cont {
+  flex: 1;
+}
+
+.projects__row-img {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #333;
+}
+
+.projects__row-content {
+  flex: 1;
+  padding: 1rem;
+}
+
+.projects__row-content-title {
+  color: #03dac5;
+}
+
+.projects__row-content-desc {
+  color: #b0b0b0;
+}
+
+/* Social Icons */
+/* Dark Mode Styles */
+body[data-theme='dark'] {
+  background-color: #1d1d1d;
+}
+
+.home-hero__social-icon {
+  filter: brightness(0) invert(1); /* Makes the icons white */
+}
+
+.home-hero__social-icon-link {
+  background-color: #333; /* Dark background for the social icons */
+}
+
+.home-hero__social-icon-link:hover {
+  background-color: #0062b9; /* Highlight on hover */
+}
+/* Style for the div element */
+.home-hero__cta {
+  text-align: center; /* Center the button */
+  margin-top: 20px;    /* Add space above */
+}
+
+/* Style for the <a> tag inside the div */
+.home-hero__cta a {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #fff; /* White text */
+  background-color: #03dac5; /* Blue background */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the link */
+.home-hero__cta a:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap; }
+  .skills__skill {
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 1.6rem;
+    background: rgba(153, 153, 153, 0.2);
+    border-radius: 5px;
+    font-weight: 600;
+    color: #fbf9f9; }
